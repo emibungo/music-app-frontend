@@ -14,4 +14,4 @@ function renderArtists() {
   });
 }
 
-module.exports = renderArtists;
+module.exports = RenderArtists;
