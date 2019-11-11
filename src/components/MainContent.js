@@ -1,11 +1,16 @@
 const Deact = require("../libs/deact");
+const Button = require('./Button')
 // const Container = require("./Container")
 
 function MainContent() {
   return Deact.create(
     "main",
     { class: "main-content" },
-    "Holy bananas, Batman!"
+    Button({
+      class: "button__show-artist"
+    },
+    "Show me an Artist Card!"
+    )
   );
 }
 
