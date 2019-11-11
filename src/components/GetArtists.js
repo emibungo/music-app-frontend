@@ -1,6 +1,6 @@
 const Http = require("../utils/http");
 const ArtistCard = require("./CreateArtistCard");
-const Deact = require('../libs/deact')
+const Deact = require("../libs/deact");
 
 function renderArtists() {
   //   document.querySelector(".main-content").innerHTML = "";
@@ -8,11 +8,12 @@ function renderArtists() {
   Http.getRequest("http://localhost:3000/artists", function(response) {
     const artists = response.Artists;
     artists.forEach(function(artist) {
-      
       // const obj = JSON.parse(artist);
-      console.log(artist._id);
+      console.log(artist);
       // console.log(obj.name);
-      Deact.render(ArtistCard(artist.name), document.querySelector(".main-content"));
+      const name = toString(artist.name);
+      const image = toString(artist.image);
+      ArtistCard(name, image);
     });
   });
 }

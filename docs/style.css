@@ -18,6 +18,7 @@ html {
 
 .main-content {
   align-items: center;
+  flex-wrap: wrap;
   display: flex;
   height: 80vh;
   justify-content: center;
@@ -37,4 +38,10 @@ html {
   flex-direction: column-reverse;
   height: 20vh;
   justify-content: center;
+}
+.artist-card {
+  display: flex;
+  box-sizing: border-box;
+  margin: 1rem;
+  border: 3px solid red;
 }
