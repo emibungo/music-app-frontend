@@ -8,6 +8,7 @@ function MainHeader() {
     {
       class: "main-header"
     },
+    
     "Crypt of Death Metal"
   );
 }
