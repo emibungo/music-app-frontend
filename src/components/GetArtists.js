@@ -5,13 +5,12 @@ function renderArtists() {
   //   document.querySelector(".main-content").innerHTML = "";
 
   Http.getRequest("http://localhost:3000/artists", function(response) {
-    const artists = response;
-    console.log(artists);
+    const artists = [response];
     artists.forEach(function(artist) {
       return console.log(artist);
-      // Deact.render(ArtistCard(artist), document.querySelector(".artist-cards"));
+      //   Deact.render(ArtistCard(artist), document.querySelector(".artist-cards"));
     });
   });
 }
 
-module.exports = RenderArtists;
+module.exports = renderArtists;
