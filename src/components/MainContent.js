@@ -7,9 +7,10 @@ function MainContent() {
   return Deact.create("main", { class: "main-content" }, "");
 }
 
-// Button({
-//   class: "button__show-artist"
-// },
-// "Show me an Artist Card!"
-// )
+// Button(
+//   {
+//     class: "button__show-artist"
+//   },
+//   "Show me an Artist Card!"
+// );
 module.exports = MainContent;

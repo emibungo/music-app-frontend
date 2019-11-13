@@ -1,19 +1,8 @@
-// const Deact = require("../libs/deact");
-// // const Container = require("./Container")
-
-// function CreateArtistCard() {
-//   return Deact.create("section", { class: `artist-cards` }, "");
-
-//   // Deact.render(document.querySelector(".artist-card"));
-
-//   // Deact.create("section", { class: "artist-cards" }, "");
-// }
-// module.exports = CreateArtistCard;
-
+const Http = require("../utils/http");
 const Deact = require("../libs/deact");
-// const Container = require("./Container")
 
 function CreateArtistCard(content) {
-  return Deact.create("section", { class: "artist-card" }, content);
+  return Deact.create("section", { class: "artist-card " }, content.name);
 }
+
 module.exports = CreateArtistCard;
