@@ -2,15 +2,10 @@ const Deact = require("../libs/deact");
 const Button = require("./Button");
 const CreateArtistCard = require("./CreateArtistCard");
 // const Container = require("./Container")
+const RenderArtists = require("./GetArtists");
 
 function MainContent() {
-  return Deact.create("main", { class: "main-content" }, "");
+  return Deact.create("main", { class: "main-content" }, [RenderArtists()]);
 }
 
-// Button(
-//   {
-//     class: "button__show-artist"
-//   },
-//   "Show me an Artist Card!"
-// );
 module.exports = MainContent;
