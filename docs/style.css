@@ -15,6 +15,11 @@ html {
   font: 20px/1 "Staatliches", sans-serif;
 }
 
+img {
+
+width : 300px;
+}
+
 #app {
   background-color: #000;
   height: 100vh;
