@@ -1,5 +1,6 @@
 const Http = require("../utils/http");
 const CreateArtistCard = require("./CreateArtistCard");
+const CreateArtistPage = require("./CreateArtistPage");
 const Deact = require("../libs/deact");
 
 function renderArtists() {
@@ -11,7 +12,9 @@ function renderArtists() {
       let artistCard = CreateArtistCard(artist);
       Deact.render(artistCard, document.querySelector(".main-content"));
       addClickEventToCards(artistCard, () => {
-        console.log("click event " + artist.name);
+        console.log("click event " + artist.name + " " + artist._id);
+        console.log(artist);
+        CreateArtistPage.CreateArtistPage(artist);
       });
     });
   });
