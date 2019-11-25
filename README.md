@@ -1,3 +1,3 @@
-# Deact
+# Music Database
 
-A light-weight DOM based UI library.
+Backend found at https://github.com/emibungo/music-app-backend
